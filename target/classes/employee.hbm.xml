@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+
+		<!-- Pojo   table -->
+		<class name="com.iits.main.hibernate_app.Employee" table="employee">
+		
+				<!-- Primary Key -->
+				<id name="eid" column="eid" type="int">
+				  <generator class="assigned"/>
+				</id>
+				<property name="ename" column="ename"/>
+				<property name="esalary" column="esalary"/>
+						
+		</class>
+
+
+</hibernate-mapping>
